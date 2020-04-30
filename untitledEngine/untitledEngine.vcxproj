@@ -70,12 +70,12 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\dev\Dependencies\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\dev\Dependencies\Libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\Dependencies\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Dependencies\Libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\dev\Dependencies\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\dev\Dependencies\Libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)\Dependencies\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)\Dependencies\Libs;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

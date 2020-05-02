@@ -27,7 +27,11 @@ int main()
 
 	// glfw window creation
 	// --------------------
+<<<<<<< HEAD
 	GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "UntitledGameEngine", NULL, NULL);
+=======
+	GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "UntitledEngine", NULL, NULL);
+>>>>>>> 0e9f710be2987684e8829edfa5ca87c03aa75c9f
 	if (window == NULL)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
@@ -41,7 +45,7 @@ int main()
 	// ---------------------------------------
 	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
 	{
-		std::cout << "Failed to initialize GLAD" << std::endl;
+		std::cout << "Failed to initialize GLAD - " << std::endl;
 		return -1;
 	}
 
